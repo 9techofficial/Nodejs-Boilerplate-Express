@@ -89,3 +89,18 @@ The project uses the following npm packages:
 
 The project follows the MVC (Model-View-Controller) structure:
 
+## Sponsor
+
+If you find this project helpful and want to support its development, consider becoming a sponsor! Your contributions will help maintain the project and improve future features.
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-❤-red)](https://github.com/sponsors/9techofficial)
+
+Any amount is greatly appreciated! 🙌
+
+## Contributing
+
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
