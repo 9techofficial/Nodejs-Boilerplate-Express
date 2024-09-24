@@ -1,7 +1,7 @@
 import express from 'express';
-import { login, register } from '../controllers/authController';
 import baseRoutes from '../framework/baseRoute';
-import authRoutes from './authRoutes';
+import { isAuth } from '../middlewares/authMiddleware';
+import { login, register } from '../controllers/authController';
 
 const router = express.Router();
 export default ():express.Router => {
@@ -16,7 +16,7 @@ export default ():express.Router => {
   baseRoutes(router, 'todo', 'todoController');
 
   // Authentication routes
-  authRoutes(router);
+  baseRoutes(router, 'user', 'userController', isAuth);
 
   // return routes
   return router;

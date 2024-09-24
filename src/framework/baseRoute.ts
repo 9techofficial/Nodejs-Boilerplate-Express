@@ -1,10 +1,12 @@
 import express from 'express';
 
-export default async function baseRoutes(router: express.Router, routeName: string, controller: any): Promise<void> {
-
+export default async function baseRoutes(router: express.Router, routeName: string, controller: any, isAuth?: any | undefined): Promise<void> {
   // Dynamically import the controller module
   const importController = await import(`../controllers/${controller}.ts`);
   const controllerModule = importController.default;
+
+  // check if route is authenticate
+  if (typeof isAuth == 'function') router.use(`/${routeName}`, isAuth);
 
   // index route  
   router.get(`/${routeName}`, async (req, res) => {
