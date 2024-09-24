@@ -41,7 +41,7 @@ The project uses the following npm packages:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/nodejs-boilerplate-express.git
+    https://github.com/9techofficial/Nodejs-Boilerplate-Express.git
     ```
 
 2. Navigate to the project directory:
@@ -61,9 +61,11 @@ The project uses the following npm packages:
     Create a `.env` file in the root directory and configure your environment variables. Example:
     
     ```bash
-    PORT=3000
-    DB_URL=mongodb://localhost:27017/yourdatabase
+    NODE_ENV=development
+    PORT=4000
+    DB_URI=mongodb://localhost:27017/yourdatabase
     JWT_SECRET=your_jwt_secret_key
+    APP_URL=http://localhost:3000
     ```
 
 ## Usage
